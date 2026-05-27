@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Haohan Shi - CV</title>
+  <style>
+    :root {
+      --bg: #f7f6f3;
+      --ink: #1a1a1a;
+      --muted: #666;
+      --accent: #1f5aa6;
+      --border: #e2e0db;
+      --card: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: "Georgia", "Times New Roman", serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 24px;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 28px;
+    }
+
+    .avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 12px;
+      background: #ddd;
+      background-size: cover;
+      background-position: center;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      letter-spacing: 0.2px;
+    }
+
+    .subtitle { color: var(--muted); margin-top: 6px; }
+
+    .links a {
+      color: var(--accent);
+      text-decoration: none;
+      margin-right: 12px;
+      font-weight: 600;
+    }
+
+    .nav {
+      margin-top: 12px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-size: 0.95rem;
+    }
+
+    .nav a {
+      color: var(--muted);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+    }
+
+    .nav a:hover { border-color: var(--muted); }
+
+    section {
+      margin: 28px 0;
+      background: var(--card);
+      border: 1px solid var(--border);
+      padding: 20px 22px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    ul { padding-left: 18px; }
+
+    .item-title {
+      font-weight: 600;
+    }
+
+    .muted { color: var(--muted); }
+
+    .news li, .pubs li { margin-bottom: 10px; }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .timeline {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .timeline li {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 16px;
+      align-items: start;
+      margin-bottom: 10px;
+    }
+
+    .timeline .date {
+      color: var(--muted);
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .timeline .desc {
+      min-width: 0;
+    }
+
+    @media (max-width: 720px) {
+      header { grid-template-columns: 1fr; }
+      .two-col { grid-template-columns: 1fr; }
+      .timeline li { grid-template-columns: 1fr; gap: 4px; }
+      .timeline .date { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <img src="/Users/shh/Desktop/SMGAAWeb/hhsphoto.png" alt="Haohan Shi" style="width: 180px; max-width: 100%; height: auto; border-radius: 12px; display: block;" />
+      <div>
+        <h1>Haohan Shi</h1>
+        <div class="subtitle">PhD in CS / Assistant Professor</div>
+        <div class="subtitle">AI Safety, Communication Security, LLM Safety, Audio Deepfake Detection</div>
+        <div class="links" style="margin-top: 10px;">
+          <a href="mailto:h.shi@henu.edu.cn">Email</a>
+          <a href="https://scholar.google.com/citations?user=xnIJnxgAAAAJ&hl=en">Google Scholar</a>
+          <a href="https://github.com/Haohan-SHI">GitHub</a>
+        </div>
+        <div class="nav">
+          <a href="#bio">Biography</a>
+          <a href="#interests">Research Interests</a>
+          <a href="#news">News</a>
+          <a href="#pubs">Selected Publications</a>
+          <a href="#edu">Education</a>
+          <a href="#honors">Honors</a>
+          <a href="#projects">Projects</a>
+          <a href="#service">Service</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <section id="bio">
+      <h2>Biography</h2>
+      <p>
+        Hi! I am an Assistant Professor at the School of Artificial Intelligence, 
+        Henan University, and a Research Collaborator at Loughborough University, 
+        working on AI Safety and communication security, with a 
+        focus on robust audio processing and audio deepfake detection in real-world 
+        communication scenarios. I have published in TASLP, ICASSP, and EUSIPCO, 
+        and have led or participated in research projects funded by the UK and China.
+      </p>
+    </section>
+
+    <section id="interests">
+      <h2>Research Interests</h2>
+      <ul>
+        <li>AI Safety and Communication Safety</li>
+        <li>LLM Safety</li>
+        <li>Audio Deepfake Detection</li>
+        <li>Packet Loss Concealment</li>
+        <li>Audio Restoration and Generation</li>
+        <li>Speech Codecs and Robust Audio Signal Processing</li>
+      </ul>
+    </section>
+
+
+    <section id="news">
+      <h2>News</h2>
+      <ul class="news">
+        <li><span class="item-title">2026 Feb.</span><br/>ICASSP paper accepted: "Audio Deepfakes Detection at the First Greeting 'Hi'".</li>
+        <li><span class="item-title">2025 Sept.</span><br/>TASLP journal paper published on packet loss concealment for speech codecs.</li>
+      </ul>
+    </section>
+
+    <section id="pubs">
+      <h2>Selected Publications</h2>
+      <ul class="pubs">
+        <li>
+          Haohan Shi, Xiyu Shi, Safak Dogan, Tianjin Huang, Yunxiao Zhang.
+          <span class="item-title">Audio Deepfakes Detection at the First Greeting "Hi"</span>.
+          ICASSP 2026. DOI: 10.1109/ICASSP55912.2026.11463587.
+        </li>
+        <li>
+          Haohan Shi, Xiyu Shi, Safak Dogan.
+          <span class="item-title">MSFPLC: Trend-Aware Multiscale Stack Fusion Packet Loss Concealment for Linear Prediction-Based Speech Codecs</span>.
+          IEEE/ACM TASLP, 2025. DOI: 10.1109/TASLPRO.2025.3611813.
+        </li>
+        <li>
+          Haohan Shi, Xiyu Shi, Safak Dogan, Saif Alzubi, Tianjin Huang, Yunxiao Zhang.
+          <span class="item-title">Benchmarking Audio Deepfake Detection Robustness in Real-world Communication Scenarios</span>.
+          EUSIPCO 2025.
+        </li>
+        <li>
+          Haohan Shi, Xiyu Shi, Safak Dogan.
+          <span class="item-title">Speech Inpainting Based on Multi-layer LSTM</span>.
+          Future Internet, 2024.
+        </li>
+      </ul>
+    </section>
+
+    <section id="edu">
+      <h2>Education and Experience</h2>
+      <ul class="timeline">
+        <li><span class="date">2026.05 - now</span><span class="desc">Assistant Professor in Computer Science, Henan University, China</span></li>
+        <li><span class="date">2025.12 - now</span><span class="desc">Research Collaborator at Loughborough University, UK</span></li>
+        <li><span class="date">2021.10 - 2025.12</span><span class="desc">PhD in Computer Science (AI &amp; Signal Processing), Loughborough University London, UK</span></li>
+        <li><span class="date">2019.07 - 2020.11</span><span class="desc">MSc in Systems, Control and Signal Processing, University of Southampton, UK</span></li>
+      </ul>
+    </section>
+
+    <section id="honors">
+      <h2>Honors</h2>
+      <ul>
+        <li>Chinese Government PhD Scholarship</li>
+        <li>Loughborough University Full PhD Scholarship</li>
+        <li>2018 MCM/ICM Mathematical Modeling Contest, First Prize (National)</li>
+        <li>2017 China Undergraduate Mathematical Modeling Contest, First Prize (Provincial)</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Research Projects</h2>
+      <ul>
+        <li>AI-based robust and secure speech signal processing in real-world communication environments (GS1016), GBP 88,500, 2021.10 - 2024.09, PI.</li>
+        <li>CSC-funded project on robust and secure speech signal processing in real communication scenarios (No. 202208060237), GBP 48,600, 2022.06 - 2025.06, PI.</li>
+      </ul>
+    </section>
+
+    <section id="service">
+      <h2>Services</h2>
+      <p class="muted">Reviewer for TASLP, EURASIP, AAAI, NeurIPS, and related conferences and journals.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: h.shi@henu.edu.cn</p>
+    </section>
+  </div>
+</body>
+</html>
